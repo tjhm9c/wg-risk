@@ -1,47 +1,23 @@
 ## 1. Description
-
+The lines of code metric is the number of SLOC in a project. This metric allows organizations to understand the size of the code-base, and how much time and effort will be required to maintain it.
 ## 2. Use Cases
-
+This metric can inform stakeholders about the maintainability of the code. A project with 10,000 SLOC will be harder to maintain that a project with 1,000.
 ## 3. Formula
-
+num_lines = 0
+for file in project:
+  for line in file:
+    num_lines += 1
 ## 4. Sample Filter and Visualization
+https://github.com/computationalmystic/MU-Software-Engineering/graphs/code-frequency
+
 
 ## 5. Sample Implementation
+https://github.com/computationalmystic/MU-Software-Engineering/graphs/code-frequency
 
 ## 6. Known Implementations
-
+Look at github.
 ## 7. Test Cases (Examples)
-
+Input: Some file
+Output: Number of lines of code in the file.
 ## 8. External References (Literature)
-
-
-
-----
-```markdown
-# {Name of Metric}
-
-## 1. Description
-A description of what the metric is and what it captures.
-The first few sentences have to match the description in the [metrics list](../activity-metrics-list.md).
-
-## 2. Use Cases
-Provide examples of how the metric might inform different stakeholders through use cases.
-
-## 3. Formula
-A generic formula (in pseudo code) to generate the metric.
-
-## 4. Sample Filter and Visualization
-Include a Sample Filter and Visualization (screenshot) of the metric from any implementation.
-
-## 5. Sample Implementation
-An example implementation, for example a SQL or Elasticsearch query.
-
-## 6. Known Implementations
-Examples of where and how metric is used. (include links to dashboard or location where metric is visible or is talked about having been used).
-
-## 7. Test Cases (Examples)
-Sample inputs (including contexts) and expected outputs for this metric. Implementers can test their implementations against these test cases. For quantitative metrics, this could include a static repository with known metric results, or just inputs and output. For qualitative metrics, this may be more difficult.
-
-## 8. External References (Literature)
-Blog posts, websites, academic papers, or books that mention the metric.
-```
+https://www.ifpug.org/content/documents/Jones-LinesofCodeMetricV6.pdf
